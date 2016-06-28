@@ -9,8 +9,6 @@ body {
     font-family: "Work Sans", sans-serif;
     background-color: #e8eff1;
     height: 100%;
-
-    overflow: hidden;
 }
 
 .logo-container {
@@ -426,7 +424,9 @@ body > .cap-container {
 
 .popup {
     display: block;
-    position: absolute;
+    position: fixed;
+
+    overflow-y: scroll;
 
     top: 0;
     right: 0;
@@ -471,6 +471,7 @@ body > .cap-container {
     width: 200px;
 
     margin-top: 30px;
+    margin-bottom: 30px;
 
     color: #ffffff;
 }

@@ -1,13 +1,11 @@
 $(function() {
     $('.closeme').on('click', function() {
         $('.popup').addClass('hidden');
-        $('body').css('overflow', 'auto');
     });
 
     $(document).on('keyup', function (e) {
         if (e.keyCode == 27) {
             $('.popup').addClass('hidden');
-            $('body').css('overflow', 'auto');
         }
     });
 
@@ -19,7 +17,6 @@ $(function() {
             'checkbox': $('#newslettercheckbox').is(':checked')
         }, function(r) {
             $('.popup').addClass('hidden');
-            $('body').css('overflow', 'auto');
             startConfetti();
         })
     });
