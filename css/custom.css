@@ -9,6 +9,8 @@ body {
     font-family: "Work Sans", sans-serif;
     background-color: #e8eff1;
     height: 100%;
+
+    overflow: hidden;
 }
 
 .logo-container {
@@ -419,3 +421,147 @@ body > .cap-container {
     line-height: 46px;
     font-weight: 500;
 }
+
+/* popup stuff */
+
+.popup {
+    display: block;
+    position: absolute;
+
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    background-color: #d1dee2;
+
+    z-index: 10;
+
+    padding-top: 100px;
+}
+.closeme {
+    display: block;
+    position: absolute;
+
+    top: 0;
+    right: 40px;
+
+    font-size: 70px;
+
+    cursor: pointer;
+}
+.popup input[type="email"] {
+    border-radius: 0;
+    border-width: 0;
+
+    text-align: center;
+}
+
+.popup button {
+    background-color: #1092cd;
+    border-radius: 0;
+    border-width: 0;
+    text-transform: uppercase;
+    font-size: 22px;
+
+    margin: auto;
+    position: relative;
+    display: block;
+
+    width: 200px;
+
+    margin-top: 30px;
+
+    color: #ffffff;
+}
+.popup button:hover {
+    background-color: #005f9a;
+    color: #ffffff;
+}
+
+.popup p {
+    text-align: left;
+    font-size: 18px;
+}
+
+/* confetti */
+
+/* Confetti code modified from https://code.google.com/p/pamelafox-samplecode/ (r343).
+   The original code is under the Apache 2.0 license.
+   http://opensource.org/licenses/Apache-2.0
+*/
+
+.confetti {
+    position: fixed;
+    z-index: 9999;
+    top: -50px;
+    -webkit-animation-direction: normal, normal;
+    -webkit-animation-timing-function: linear, ease-in;
+}
+.confetti span {
+    display: block;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-timing-function: linear;
+}
+.confetti.tiny {
+    font-size: 0.7em;
+}
+.confetti.small {
+    font-size: 1em;
+}
+.confetti.medium {
+    font-size: 2em;
+}
+@-webkit-keyframes fade {
+    0% {
+        opacity: 1;
+    }
+    70% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@-webkit-keyframes drop {
+    0% {
+        -webkit-transform: translate(0px, -40px);
+    }
+    100% {
+        -webkit-transform: translate(0px, 600px);
+    }
+}
+@-webkit-keyframes jitterA {
+    0% {
+        -webkit-transform: rotate(-70deg) rotateX(-20deg) rotateY(240deg);
+    }
+    100% {
+        -webkit-transform: rotate(290deg) rotateX(340deg) rotateY(-120deg);
+    }
+}
+@-webkit-keyframes jitterB {
+    0% {
+        -webkit-transform: rotate(75deg) rotateX(60deg) rotateY(-10deg);
+    }
+    100% {
+        -webkit-transform: rotate(-280deg) rotateX(-230deg) rotateY(300deg);
+    }
+}
+@-webkit-keyframes jitterC {
+    0% {
+        -webkit-transform: rotate(20deg) rotateX(40deg) rotateY(-50deg);
+    }
+    100% {
+        -webkit-transform: rotate(320deg) rotateX(400deg) rotateY(200deg);
+    }
+}
+@-webkit-keyframes jitterD {
+    0% {
+        -webkit-transform: rotate(-180deg) rotateX(20deg) rotateY(-100deg);
+    }
+    100% {
+        -webkit-transform: rotate(180deg) rotateX(-300deg) rotateY(200deg);
+    }
+}
+/* end of confetti */
