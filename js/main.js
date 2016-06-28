@@ -11,7 +11,7 @@ $(function() {
 
     $('#submitemail').on('click', function(e) {
         e.preventDefault();
-        $(this).text('Pošiljamo ...');
+        $(this).text('Shranjujemo ...');
         $.post('https://sheetsu.com/apis/v1.0/f41cf979', {
             'email': $('#emailinput').val(),
             'checkbox': $('#newslettercheckbox').is(':checked')
