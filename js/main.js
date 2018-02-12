@@ -183,7 +183,7 @@ $(function() {
         })
     });
 
-    $("#ze-poslanih-number").load("http://knedl.si/djnd/counter/mail");
+    // $("#ze-poslanih-number").load("http://knedl.si/djnd/counter/mail");
 
     // share/socials
     $(".share-container input").on("focus", function() {
