@@ -175,13 +175,13 @@ $(function() {
     // forma
     var prejemniki = "Monika.Mandic@dz-rs.si, Bozo.Predalic@dz-rs.si, ksenija.vencelj@dz-rs.si, miroslav.pretnar@dz-rs.si, matej.kolenc@dz-rs.si, terezija.trupi@dz-rs.si, sanja.ajanovic@dz-rs.si, petra.jamnik@dz-rs.si, danica.polak@dz-rs.si";
 
-    $("#message-form").on("submit", function(event) {
-        event.preventDefault();
-        $.get('http://knedl.si/djnd/add/mail', function(r) {
-            var a = 'mailto:' + prejemniki + '?subject=ŠOU ZAKONODAJA&body=' + encodeURIComponent(document.getElementById('form-content').value);
-            document.location.href = a;
-        })
-    });
+    // $("#message-form").on("submit", function(event) {
+    //     event.preventDefault();
+    //     $.get('http://knedl.si/djnd/add/mail', function(r) {
+    //         var a = 'mailto:' + prejemniki + '?subject=ŠOU ZAKONODAJA&body=' + encodeURIComponent(document.getElementById('form-content').value);
+    //         document.location.href = a;
+    //     })
+    // });
 
     // $("#ze-poslanih-number").load("http://knedl.si/djnd/counter/mail");
 
