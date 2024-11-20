@@ -8,4 +8,4 @@ resources:
 images:
   - name: studentski-uspehi
     newName: rg.fr-par.scw.cloud/djnd/studentski-uspehi
-    newTag: 'latest'
+    newTag: '4386821217b6cf2585f3c1dcd6a60a316f95d911'
