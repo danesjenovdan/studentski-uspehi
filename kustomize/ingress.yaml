@@ -5,7 +5,7 @@ metadata:
   annotations:
     cert-manager.io/cluster-issuer: "letsencrypt-production"
 spec:
-  ingressClassName: nginx
+  ingressClassName: traefik
   tls:
     - hosts:
         - studentski-uspehi.djnd.si
@@ -13,7 +13,7 @@ spec:
       secretName: studentski-uspehi-tls
   rules:
     - host: studentski-uspehi.djnd.si
-      http:
+      http: &http_paths
         paths:
           - path: /
             pathType: Prefix
@@ -23,12 +23,4 @@ spec:
                 port:
                   number: 80
     - host: studentski-uspehi.danesjenovdan.si
-      http:
-        paths:
-          - path: /
-            pathType: Prefix
-            backend:
-              service:
-                name: studentski-uspehi
-                port:
-                  number: 80
+      http: *http_paths
